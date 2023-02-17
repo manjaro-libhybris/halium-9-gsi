@@ -7,8 +7,10 @@ pkgdesc="Halium rootfs for Android 9"
 arch=('aarch64')
 url="https://github.com/manjaro-libhybris/halium-9-gsi"
 license=('custom')
-provides=('wget' 'tar')
+provides=('halium-gsi')
+conflicts=('halium-10-gsi' 'halium-11-gsi')
 depends=('lxc')
+makedepends=('wget' 'tar')
 options=()
 
 package() {
